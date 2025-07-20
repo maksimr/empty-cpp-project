@@ -1,4 +1,5 @@
 {
+    "cmake.useCMakePresets": "always",
     "C_Cpp.default.includePath": [
         "${workspaceFolder}/.conan2/**",
     ]

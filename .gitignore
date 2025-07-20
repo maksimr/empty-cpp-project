@@ -1,5 +1,6 @@
 build
 .conan2
+.cmake
 # Created by https://www.toptal.com/developers/gitignore/api/c++,conan,git,visualstudiocode,jetbrains
 # Edit at https://www.toptal.com/developers/gitignore?templates=c++,conan,git,visualstudiocode,jetbrains
 
@@ -207,3 +208,26 @@ fabric.properties
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/c++,conan,git,visualstudiocode,jetbrains
+# Created by https://www.toptal.com/developers/gitignore/api/cmake
+# Edit at https://www.toptal.com/developers/gitignore?templates=cmake
+
+### CMake ###
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+
+### CMake Patch ###
+CMakeUserPresets.json
+
+# External projects
+*-prefix/
+
+# End of https://www.toptal.com/developers/gitignore/api/cmake

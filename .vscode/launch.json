@@ -5,14 +5,14 @@
       "name": "(lldb) Launch",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/build/main",
+      "program": "${workspaceFolder}/build/Debug/EmptyCppProject",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
       "environment": [],
       "externalConsole": false,
       "MIMode": "lldb",
-      "preLaunchTask": "${defaultBuildTask}"
+      "preLaunchTask": "CMake: build (debug)"
     }
   ]
 }
