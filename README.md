@@ -21,17 +21,3 @@ cmake --preset conan-debug
 cmake --build --preset conan-debug
 ./build/Debug/EmptyCppProject
 ```
-
-## CLion
-
-Problem with `ccache`
-
-CMake options:
-```
---preset=conan-debug -DCMAKE_CXX_COMPILER_LAUNCHER=ccache
-```
-
-Build directory:
-```
-build/Debug
-```
