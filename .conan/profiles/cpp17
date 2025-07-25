@@ -1,7 +1,0 @@
-include(default)
-
-[settings]
-compiler=clang
-compiler.version=17
-compiler.libcxx=libc++
-compiler.cppstd=17
