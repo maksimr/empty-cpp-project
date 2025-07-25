@@ -6,11 +6,17 @@
       "type": "cppdbg",
       "request": "launch",
       "program": "${workspaceFolder}/build/Debug/EmptyCppProject",
-      "args": [],
-      "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
-      "environment": [],
-      "externalConsole": false,
+      "MIMode": "lldb",
+      "preLaunchTask": "CMake: build"
+    },
+    {
+      "name": "(gdb) Launch",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/Debug/EmptyCppProject",
+      "cwd": "${workspaceFolder}",
+      "MIMode": "gdb",
       "preLaunchTask": "CMake: build"
     }
   ]
