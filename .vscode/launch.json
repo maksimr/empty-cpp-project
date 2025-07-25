@@ -11,8 +11,7 @@
       "cwd": "${workspaceFolder}",
       "environment": [],
       "externalConsole": false,
-      "MIMode": "lldb",
-      "preLaunchTask": "CMake: build (debug)"
+      "preLaunchTask": "CMake: build"
     }
   ]
 }
