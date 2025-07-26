@@ -3,20 +3,17 @@
 ## Prerequisites
 
 ```sh
-brew install conan cmake
-```
+brew install pkg-config cmake
 
-## Setup
-
-```sh
-conan profile detect
+git clone https://github.com/microsoft/vcpkg --depth 1 --single-branch -b master .vcpkg
+.vcpkg/bootstrap-vcpkg.sh
 ```
 
 ## Building
 
 ```sh
-conan install . -b missing -s build_type=Debug
-cmake --preset conan-debug
-cmake --build --preset conan-debug
-./build/Debug/EmptyCppProject
+.vcpkg/vcpkg install
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug
+cmake --build build
+./build/EmptyCppProject
 ```

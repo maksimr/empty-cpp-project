@@ -1,9 +1,9 @@
 build
-.conan2
 .cmake
 .idea
-# Created by https://www.toptal.com/developers/gitignore/api/c++,conan,git,visualstudiocode,jetbrains
-# Edit at https://www.toptal.com/developers/gitignore?templates=c++,conan,git,visualstudiocode,jetbrains
+.vcpkg
+# Created by https://www.toptal.com/developers/gitignore/api/c++,git,visualstudiocode,jetbrains,vcpkg
+# Edit at https://www.toptal.com/developers/gitignore?templates=c++,git,visualstudiocode,jetbrains,vcpkg
 
 ### C++ ###
 # Prerequisites
@@ -38,28 +38,6 @@ build
 *.exe
 *.out
 *.app
-
-### Conan ###
-# Conan build information
-conan.lock
-conanbuildinfo.*
-conaninfo.txt
-graph_info.json
-
-## Various built-in generators
-# cmake_find_package generator https://docs.conan.io/en/latest/reference/generators/cmake_find_package.html
-Find*.cmake
-
-# cmake_paths generator https://docs.conan.io/en/1.4/integrations/cmake/cmake_paths_generator.html
-conan_paths.*
-
-# Environment activation scripts produced by https://docs.conan.io/en/latest/mastering/virtualenv.html#virtualenv-generator
-activate_run.ps1
-activate_run.sh
-deactivate_run.ps1
-deactivate_run.sh
-environment_run.ps1.env
-environment_run.sh.env
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:
@@ -231,4 +209,12 @@ CMakeUserPresets.json
 # External projects
 *-prefix/
 
-# End of https://www.toptal.com/developers/gitignore/api/cmake
+### vcpkg ###
+# Vcpkg
+
+vcpkg-manifest-install.log
+
+## Manifest Mode
+vcpkg_installed/
+
+# End of https://www.toptal.com/developers/gitignore/api/vcpkg
