@@ -13,7 +13,7 @@ git clone https://github.com/microsoft/vcpkg --depth 1 --single-branch -b master
 
 ```sh
 .vcpkg/vcpkg install
-cmake -S . -B build/Debug -DCMAKE_BUILD_TYPE=Debug
-cmake --build build/Debug
-./build/Debug/EmptyCppProject
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug
+cmake --build build
+./build/EmptyCppProject
 ```
