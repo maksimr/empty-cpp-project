@@ -2,21 +2,14 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "(lldb) Launch",
+      "name": "(cppdebug) Launch",
       "type": "cppdbg",
       "request": "launch",
       "program": "${workspaceFolder}/build/EmptyCppProject",
       "cwd": "${workspaceFolder}",
-      "MIMode": "lldb",
-      "preLaunchTask": "CMake: build"
-    },
-    {
-      "name": "(gdb) Launch",
-      "type": "cppdbg",
-      "request": "launch",
-      "program": "${workspaceFolder}/build/EmptyCppProject",
-      "cwd": "${workspaceFolder}",
-      "MIMode": "gdb",
+      "osx": {
+        "MIMode": "lldb"
+      },
       "preLaunchTask": "CMake: build"
     }
   ]
