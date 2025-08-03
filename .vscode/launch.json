@@ -5,7 +5,7 @@
       "name": "(cppdebug) Launch",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/build/EmptyCppProject",
+      "program": "${command:cmake.launchTargetPath}",
       "cwd": "${workspaceFolder}",
       "osx": {
         "MIMode": "lldb"
