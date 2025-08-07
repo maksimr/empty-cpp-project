@@ -2,6 +2,7 @@ build
 .cmake
 .idea
 .vcpkg
+.cache
 # Created by https://www.toptal.com/developers/gitignore/api/c++,git,visualstudiocode,jetbrains,vcpkg
 # Edit at https://www.toptal.com/developers/gitignore?templates=c++,git,visualstudiocode,jetbrains,vcpkg
 
