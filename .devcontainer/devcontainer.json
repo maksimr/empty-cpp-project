@@ -1,29 +1,24 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/cpp
 {
-	"name": "C++",
-	"build": {
-		"dockerfile": "Dockerfile"
-	},
-	"mounts": [
-		"type=volume,target=${containerWorkspaceFolder}/build",
-		"type=volume,target=${containerWorkspaceFolder}/.vcpkg",
-		"type=volume,target=${containerWorkspaceFolder}/vcpkg_installed"
-	],
-	"postStartCommand": "sudo chown -R vscode:vscode ${containerWorkspaceFolder}/build ${containerWorkspaceFolder}/vcpkg_installed ${containerWorkspaceFolder}/.vcpkg"
-
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
-
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
-
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "gcc -v",
-
-	// Configure tool-specific properties.
-	// "customizations": {},
-
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+  "name": "C++",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "mounts": [
+    "type=volume,target=${containerWorkspaceFolder}/build",
+    "type=volume,target=${containerWorkspaceFolder}/.vcpkg",
+    "type=volume,target=${containerWorkspaceFolder}/vcpkg_installed"
+  ],
+  "features": {
+    "ghcr.io/devcontainers/features/sshd:1": {}
+  },
+  // Expose SSH port for tools that need it (e.g. Zed)
+  // forwardPorts is not supported in devcontainer cli yet, so we need to use appPort instead
+  // https://github.com/devcontainers/cli/issues/186
+  // devcontainer up --workspace-folder .
+  // ssh -p 2222 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o GlobalKnownHostsFile=/dev/null vscode@localhost
+  "appPort": [2222],
+  "postCreateCommand": "echo 'vscode:vscode' | sudo chpasswd",
+  "postStartCommand": "sudo chown -R vscode:vscode ${containerWorkspaceFolder}/build ${containerWorkspaceFolder}/vcpkg_installed ${containerWorkspaceFolder}/.vcpkg"
 }
