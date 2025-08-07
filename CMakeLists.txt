@@ -6,6 +6,7 @@ if(NOT VCPKG_ROOT)
 endif()
 
 set(CMAKE_TOOLCHAIN_FILE "${VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake")
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 project(EmptyCppProject)
 
