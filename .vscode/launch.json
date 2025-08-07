@@ -10,6 +10,7 @@
       "osx": {
         "MIMode": "lldb"
       },
+      "build": "CMake: build",
       "preLaunchTask": "CMake: build"
     }
   ]
