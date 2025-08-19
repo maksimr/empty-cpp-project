@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
 
+set(CMAKE_CXX_STANDARD 23)
+
 set(VCPKG_ROOT "$ENV{VCPKG_ROOT}")
 if(NOT VCPKG_ROOT)
     set(VCPKG_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/.vcpkg")
