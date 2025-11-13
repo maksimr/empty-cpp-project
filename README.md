@@ -1,6 +1,6 @@
 # Empty C++ Project
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/maksimr/empty-cpp-project)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/maksimr/empty-cpp-project?quickstart=1)
 
 ## Prerequisites
 
